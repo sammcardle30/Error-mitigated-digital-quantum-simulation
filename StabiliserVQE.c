@@ -95,6 +95,7 @@ void controlledZ(MultiQubit qReg, int controlQubit, int targetQubit)
 	// Performs a controlled-Z gate.
 	
 	hadamard(qReg, targetQubit);
+	controlledNot(qReg, controlQubit, targetQubit);
 	hadamard(qReg, targetQubit);
 	
 	return;	
