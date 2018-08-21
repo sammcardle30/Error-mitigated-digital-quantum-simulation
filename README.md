@@ -1,5 +1,5 @@
-# Error-mitigated-digital-quantum-simulation
-Simulation code generated in preparation of the work 'Error mitigated digital quantum simulation'.
+# Error mitigated digital quantum simulation
+Simulation code generated in preparation of the work 'Error mitigated digital quantum simulation' https://arxiv.org/abs/1807.02467.
 
 
 
