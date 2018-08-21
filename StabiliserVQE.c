@@ -649,7 +649,7 @@ int main (int narg, char** varg) {
 	int numQubits = 5;
 	MultiQubit qubits; 
 	createMultiQubit(&qubits, numQubits, env);
-    initStateZero(&qubits);
+   	initStateZero(&qubits);
 	
 	//unsigned long int seedArray[2] = {jobID, numQubits};
 	
