@@ -15,9 +15,10 @@ In order to run the file, open the command prompt and navigate to the directory 
 
 'make'
 
-'./VQE'
+'./VQE Distance JobID'
 
-to run the file.
+to run the file. (Distance is the interatomic separation, and JobID is an identifier that is different for every simulation.
+I used the Slurm Job ID for my simulations. These variables ensure random seeding for each run.)
 
 
 # Hamiltonian data
