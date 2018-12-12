@@ -77,29 +77,6 @@ void readData(double hamiltonianData[NUMTERMS][TERMLENGTH])
 	}
 
 
-void controlledY(MultiQubit qReg, int controlQubit, int targetQubit)
-{
-	// Performs a controlled-Y gate.
-	
-	controlledRotateX(qReg, controlQubit, targetQubit, PI);
-	hadamard(qReg, targetQubit);
-	controlledNot(qReg, controlQubit, targetQubit);
-	hadamard(qReg, targetQubit);
-	
-	return;	
-}
-
-
-void controlledZ(MultiQubit qReg, int controlQubit, int targetQubit)
-{
-	// Performs a controlled-Z gate.
-	
-	hadamard(qReg, targetQubit);
-	controlledNot(qReg, controlQubit, targetQubit);
-	hadamard(qReg, targetQubit);
-	
-	return;	
-}
 
 
 void oneQubitNoise(MultiQubit qReg, double gateNoise, int qubit, double errorArray[2])
