@@ -628,9 +628,6 @@ int main (int narg, char** varg) {
 	createMultiQubit(&qubits, numQubits, env);
    	initStateZero(&qubits);
 	
-	//unsigned long int seedArray[2] = {jobID, numQubits};
-	
-	//QuESTSeedRandom	(seedArray, 2);
 	QuESTSeedRandomDefault();
 	// END INITIALISATION
 
