@@ -57,7 +57,7 @@ void readData(double hamiltonianData[NUMTERMS][TERMLENGTH])
 		// Read in the Hamiltonian data.
 	FILE *fp;
 
-	fp = fopen("H2at075Local.txt", "r");
+	fp = fopen("H2at075.txt", "r");
 
 	for(int i=0; i<NUMTERMS; i++)
 		{
