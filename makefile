@@ -13,7 +13,7 @@
 COMPILER = GNU
 
 # EXECUTABLE TO GENERATE
-EXE = VQE
+EXE = probe
 
 # USER SOURCE FILES
 # This makefile expects all user sources to be in the root directory.
