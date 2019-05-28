@@ -38,8 +38,6 @@ acting on the corresponding qubit (3rd column= zeroth qubit, sixth column = last
 
 For example, the first two terms of the Hamiltonian at 0.75 A are: -0.109731 IIII + 0.169885 ZIII + ...
 
-The Hamiltonian being investigated can be changed by updating the function readData() in the file StabiliserVQE.c 
-
 
 # Running StabiliserVQE.c
 
@@ -49,7 +47,13 @@ double parameters[3] : The three parameters for the UCCSD ansatz.
 
 double gateNoise : The 2 qubit gate noise (A number between 0 and 1).
 
-int nRepeats : The number of circuit repititions performed to obtain the expectation value of each term in the Hamiltonian.
+double overRot : The percentage over/under-rotation in the temporally correlated noise model.
 
+double chosenPrecision : An upper bound on the desired shot-noise in the result, when error mitigation is not applied.
+	
+int numElectrons = The number of electrons in the H2 molecule ground state.
+
+int numSpinUp = The number of spin-up electrons in the H2 molecule ground state.
+  
 int extrap :  Whether error extrapolation is on or off; set as 0 for off, set as 1 for on.
 
